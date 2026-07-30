@@ -1,26 +1,34 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Стили</title>
-    <link rel="stylesheet" href="style.css">
+	<style>
+	header{
+		padding: 2rem;
+	}
+	h1 { color: #0969da; }
+	h2 { color: green; }	
+	</style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя первая страница</title>
 </head>
 <body>
     <header>
 		<h1>Всем привет!</h1>
-		<h2>Я Сергей! Пишу свою первую страницу</h2>	
+		<h2>Это моя первая страница на GitHub Pages.</h2>	
 	</header>
 	<main>
-		<p>Добро пожаловать. Я еще не волшебник, только учусь, пробую написать свой <strong>первый настоящий сайт</strong>.</p>
+		<p>Добро пожаловать. Пробую написать свой <strong>первый настоящий сайт</strong>.</p>
 		<p>Хочу освоить азы создания сайта. Надеюсь, что это <em>реально</em>!</p>
 		<img src="hedgehog.jpg" alt="Мой аватар">
 		<h3>Что я уже умею:</h3>
 	<ul>
 		<li>Создавать HTML-страницы</li>
-		<li>Пользоваться редактором Programmers Notepad</li>
+		<li>Пользоваться редактором Notepad++</li>
 		<li>Отличать парные теги от одиночных</li>
+		<li>Вставлять картинки</li>
+		<li>Использовать <strong>жирный шрифт</strong> и <em>курсив</em></li>
 		<li>Создавать списки</li>	
 	</ul>
 	<h3>Чего хочу:</h3>
@@ -29,29 +37,29 @@
 		<li>Посидеть ещё полчаса за изучением HTML</li>
 		<li>Пойти домой</li>
 	</ol>
-	
-	<form>
-	<!-- Поле для имени -->
-	<p>Как вас зовут?</p>
-	<input type="text" placeholder="ИванИванов">
-
-	<!-- Поле для почты -->
-	<p>Ваш E-mail для связи:</p>
-	<input type="email" placeholder="example@mail.com">
-
-	<!-- Поле для секретного слова (просто чтобы показать, как работают пароли!) -->
-	<p>Секретное слово (никто не увидит):</p>
-	<input type="password" placeholder="Тссс...">
-
-	<!--Кнопка -->
-	<br><br>
-	<button type="submit">Отправитьсообщение</button>
-	</form>
-	
 	</main>
+	
 	<footer>
 		<h3>Как со мной связаться:</h3>
-		<p>Пишите мне на E-mail: </p>
+		<p>Пишите мне на почту:<a href="https://schern.online">E-mail</a>.</p>	
+		<form>
+		<!-- Поле для имени -->
+		<p>Как вас зовут?</p>
+		<input type="text" placeholder="Иванов Иван">
+
+		<!-- Поле для почты -->
+		<p>Ваш E-mail для связи:</p>
+		<input type="email" placeholder="example@mail.com">
+
+		<!-- Поле для секретного слова (просто чтобы показать, как работают пароли!) -->
+		<p>Секретное слово (никто не увидит):</p>
+		<input type="password" placeholder="Тссс...">
+
+		<!-- Кнопка -->
+		<br><br>
+		<button type="submit">Отправить сообщение</button>
+		</form>
+
 	</footer>
 
 </body>
