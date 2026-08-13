@@ -9,33 +9,36 @@ p{
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
-	max-width: 1170px;
+	max-width: 1700px;
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
-	padding-left: 1rem;
+  padding-left: 220px;
 	padding-right: 1rem;
   background: #f7f8fa;
   color: #333; 
 }
 header{
-	padding: 10px;
+	padding: 0px;
 	text-align: center;
 }
 h1{ 
 	color: #0969da;
+	text-align: center;
 }
 h2{
 	color: green;
+	text-align: center;	
 }
 h3{
 	margin-block-start: 1em;
-	margin-block-end: 0.5em;	
+	margin-block-end: 0.5em;
+	text-align: center;
 }
 
 aside {
 	background: #f0f0f0;
 	padding: 5px;
-	width: 120px;
+	width: 220px;
 	float: right;
 	height: 100%;
   margin-top: 5px;
@@ -43,13 +46,16 @@ aside {
 }
 
 article {
-	background: white;
-	margin-right: 142px;
-	padding-top: 5px;
+	background: #fffaf0;
+	margin-right: 1rem;
+	padding-top: 1rem;
   padding-bottom: 10px;	
 }
 
-
+img{
+	max-width: 100%;
+	height: auto;
+}
 .card {
   background: white;
   padding: 1rem;
@@ -57,4 +63,81 @@ article {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
   margin-top: 5px;
 	margin-right: 142px;
+}
+
+dd {
+	font-style: italic; /* Курсивное начертание текста */
+}
+
+dt {
+	margin-top: 1em; /* Отступ сверху */
+}
+
+/*  при уменьшении ширины окна до 768 пикселей:
+	- убрать боковую панель
+	- убрать панель навигации
+	- уменьшить padding-left
+ */
+@media (max-width: 768px) {
+	.sidebar {
+		display: none;
+	}
+	img {
+		display: none;
+	}
+	aside	{
+		display: none;
+	}
+	body {
+		padding-left: 10px;	
+	}
+	article {
+		margin-right: 10px;
+	}
+}
+
+/* Боковая панель */
+.sidebar {
+	height: 100%; /* Полная высота: удалите это, если вы хотите "авто" высота */
+	width: 200px; /* Установите ширину боковой панели */
+	position: fixed; /* Фиксированная боковая панель (оставайтесь на месте при прокрутке) */
+	z-index: 1; /* Оставайтесь с верху */
+	top: 0; /* Оставайтесь на вершине */
+	left: 0;
+	background: #f0f0f0; /* серый*/
+	overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+	padding-top: 20px;
+}
+
+/* меню навигации */
+nav{
+	height: auto;	/* высота */
+	width: auto;		/*ширина*/
+	background: #f3e5ab; /* e0ffff*/
+	margin: 6px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+/* Ссылки в меню навигации */
+nav a {
+  padding: 2px 0px 0px 16px;	/* сверху снизу справа слева? */
+  text-decoration: none;
+  font-size: 20px;
+  color: #2F4F4F;
+  display: block;
+}
+
+/* При наведении курсора мыши на навигационные ссылки измените их цвет */
+nav a:hover {
+  color: #5d4073;
+}
+
+.news{
+	height: auto;	/* высота */
+	width: auto;		/*ширина*/
+	background: #7ea9e6; /* e0ffff*/
+	margin: 6px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 16px;
 }
