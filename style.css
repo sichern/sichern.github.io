@@ -118,14 +118,14 @@ dt {
 
 /* Боковая панель */
 .sidebar {
-	height: 100%; /* Полная высота: удалите это, если вы хотите "авто" высота */
-	width: 200px; /* Установите ширину боковой панели */
-	position: fixed; /* Фиксированная боковая панель (оставайтесь на месте при прокрутке) */
-	z-index: 1; /* Оставайтесь с верху */
-	top: 0; /* Оставайтесь на вершине */
+	height: 100%;			/* Полная высота: удалите это, если вы хотите "авто" высота */
+	width: 200px;			/* Установите ширину боковой панели */
+	position: fixed;	/* Фиксированная боковая панель (остается на месте при прокрутке) */
+	z-index: 1;				/* Остается поверх всего */
+	top: 0;						/* Остается сверху */
 	left: 0;
-	background: #f0f0f0; /* серый*/
-	overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+	background: #f0f0f0;	/* серый*/
+	overflow-x: hidden;		/* Отключить горизонтальную прокрутку */
 	padding-top: 20px;
 }
 
@@ -156,7 +156,7 @@ nav a:hover {
 	width: auto;		/*ширина*/
 	background: #fffaf0;
 	margin: 6px;
-	padding: 16px;
+	padding: 8px;
 }
 
 .news{
@@ -167,4 +167,55 @@ nav a:hover {
 	padding-top: 4px;
 	padding-bottom: 8px;
 	font-size: 16px;
+}
+
+/* Настройки таблицы */
+.layoutTD {
+	width: 100%; /* Ширина всей таблицы */
+	border: 1px dashed;
+	border-color: blue;
+	cellpadding="4";
+}
+
+td {
+	/*vertical-align: top;  Вертикальное выравнивание в ячейках */
+	padding: 5px; /* Поля вокруг ячеек */
+}
+
+.leftcol {
+	width: 50%; /* Ширина левой колонки */
+	background: #fffffc; /* Цвет фона левой колонки */
+	border: 1px solid #e6e6e6; /* Параметры рамки */
+}
+.rightcol {
+	width: 50%; /* Ширина правой колонки */
+	background: #f0f0f0; /* Цвет фона правой колонки */
+	border: 1px solid #e6e6e6; /* Параметры рамки */
+}
+.spacer {
+	width: 10px; /* Расстояние между колонками */
+}
+.unioncol{
+	border-top: 1px solid #ff0000;
+	background: #ebfff5;
+}
+
+/* Настройки таблицы для разметки*/
+.markupTD{
+	width: 100%; /* Ширина всей таблицы */
+	background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+td.leftmark{
+	width: 180px; /* Ширина колонки */
+	background: #f0f0f0;
+}
+td.rightmark{
+	width: auto; /* Ширина колонки */
+	background: #fffffc;
+}
+.spacemark{
+	width: 5px; /* Расстояние между колонками */
 }

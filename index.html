@@ -11,13 +11,12 @@
 	<meta charset="UTF-8"> <!-- charset=".." атрибут задает кодировку документа --> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!-- настраивает отображение на мобильных устройствах -->
 	<!-- Описание страницы (для поисковых систем) -->
-	<meta name="description" content="Страница на GitHub"> 
+	<meta name="description" content="Одинокая страница"> 
 	<meta name="keywords" content="HTML, стили, теги, атрибуты">
 	<meta name="author" content="Черножуков Сергей">
 	
 	<title>Страница на GitHub</title> <!-- заголовок окна веб-страницы, отображается в левом верхнем углу окна браузера -->
 	<link rel="stylesheet" href="style.css"> <!-- Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами -->
-
 </head>
 
 <body>	<!-- Содержимое страницы видимое для посетителей сайта  -->
@@ -30,8 +29,8 @@
 	
 	<div class="sidebar">
 		<div class="logo">
-			<img src="logo7_.png" height="100%" alt="Логотип">
-		</div>	
+			<img src="logo_SC.png" height="100%" alt="Логотип">
+		</div>
 
 		<nav>
 			<h3>Навигация</h3>
@@ -42,16 +41,16 @@
     </nav>
 
 		<div class="news">
-			<h3> Что нового:</h3>
+			<h3> Цели и задачи:</h3>
 			<ul>
-				<li>Добавил логотип</li>
-				<li>Изменил стили</li>
-				<li>Сделал ссылки для навигации</li>
+				<li>Исследовать многообразие стилей</li>
+				<li>Сделать несколько страниц</li>
+				<li>Вставить интерактив</li>
+				<li>Создать приличный сайт</li>			
 			</ul>
 		</div>
 
 	<hr>
-		<img src="hedgehog.jpg" width="100%" alt="Ёжик">
 	</div>
 	
 	<main>	<!--  -->
@@ -123,7 +122,7 @@
 	<p>Ещё одна цитата ))</p>	
   <blockquote>
 	<aside>
-		<p>Вот тут у на и есть боковая панель, а в левой стороне страницы - сайдбар</p>
+		<p>Вот тут у нас и есть боковая панель, а в левой стороне страницы - сайдбар</p>
 	</aside>
 	<p>Боковая панель и сайдбар — это не одно и то же!
 	Если &ltaside&gt используется внутри тегов &ltsection&gt или &ltarticle&gt, контент должен быть «связан» с ним.
@@ -161,6 +160,64 @@
 		</dd>
 	</dl>
 	
+	<br>
+	<h3>6. Таблицы</h3> 	<!-- Заголовок третьего уровня -->
+<!-- Таблица -->
+	<table class="layoutTD">
+		<caption>Название таблицы</caption>
+		<thead>
+			<tr>
+				<th>Заголовок 1</th>
+				<th class="spacer"></th>
+				<th>Заголовок 2</th>
+			</tr>
+		</thead>
+		<tr>
+			<td class="leftcol">Ячейка 1</td>
+			<td class="spacer"></td>
+			<td class="rightcol">Ячейка 2</td>
+		</tr>
+		<tr>
+			<td class="leftcol">Ячейка 3</td>
+			<td class="spacer"></td>
+			<td class="rightcol">Ячейка 4</td>
+		</tr>	
+		<tfoot>
+			<tr>
+				<td class="unioncol"	colspan="3">Ячейка 5 - объединяем ячейки по горизонтали, например, внизу таблицы можно сделать графу "Итого:"</td>
+			</tr>
+		</tfoot>		
+	</table>
+
+	<br>	
+	<img src="Dot.png" height="10px" alt="Точки">
+	<p>Один из способов стилизации страницы - таблица. Вместо сайдбара можно разбить страницу на несколько частей в виде таблицы.</p>
+	<p>Будет выглядеть примерно так</p>	
+	<table class="markupTD">
+		<tr>
+			<td class="leftmark">
+				<h3>Главное</h3> 	<!-- Заголовок третьего уровня -->
+				<nav>
+					<h3>Навигация</h3>
+					<a href="#contents">Содержание</a>
+					<a href="#refs">Полезные ссылки</a>
+					<a href="#cont">Контакты</a>
+				</nav>
+			</td>
+			<td class="spacemark"></td>
+			<td class="rightmark">
+				<h3>1. Начало</h3> 	<!-- Заголовок третьего уровня -->
+					<aside>
+					<p>Боковая панель</p>
+					</aside>				
+				<p>Добро пожаловать.</p> 	<!-- <p> параграф текста --> 
+				<p>Эта страница делается исключительно как <strong>шпаргалка</strong>.</p> <!-- <strong> жирный текст --> 
+				<img src="foto2.jpg" height="100px" alt="Ещё один пейзаж">
+			</td>
+		</tr>		
+	</table>
+	
+	<br>
 	<div class="card">
 		<p>Тут карточка</p>
 	</div>
@@ -202,6 +259,7 @@
 		</form>
 	<hr>		
 		<p>© 2026 Моя компания</p>
+		<img src="hedgehog.png" width="40px" alt="Ёжик">
 	</footer>
 	<br>
 
