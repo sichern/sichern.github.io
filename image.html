@@ -1,0 +1,83 @@
+<!DOCTYPE html>		<!-- объявление типа документа для HTML5 -->
+<html lang="ru">	<!-- корневой элемент, заключает в себе все содержимое веб-страницы
+									lang=".." атрибут для указания языка страницы
+									Внутри <html> страница строго делится на две большие зоны:
+									невидимую (<head>) и видимую (<body>)-->
+<head>	<!-- раздел для заголовка страницы и технической информации
+				Внутри контейнера <head> допускается размещать следующие элементы:
+				<base>, <basefont>, <bgsound>, <link>, <meta>, <script>, <style>, <title> 
+				Содержимое <head> не видимо для посетителей сайта -->
+	<!-- тег <meta> - метаданные, которые используются для хранения информации предназначенной для браузеров и поисковых систем -->
+	<meta charset="UTF-8"> <!-- charset=".." атрибут задает кодировку документа --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!-- настраивает отображение на мобильных устройствах -->
+	<!-- Описание страницы (для поисковых систем) -->
+	<meta name="description" content="Одинокая страница"> 
+	<meta name="keywords" content="HTML, стили, теги, атрибуты">
+	<meta name="author" content="Черножуков Сергей">
+	
+	<title>Картинки</title> <!-- заголовок окна веб-страницы, отображается в левом верхнем углу окна браузера -->
+	<link rel="stylesheet" href="style.css"> <!-- Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами -->
+</head>
+
+<body>	<!-- Содержимое страницы видимое для посетителей сайта  -->
+<!-- Семантические теги: <header>, <main>, <footer> -->
+	<header>	<!-- (Шапка) — верхняя часть сайта. Обычно тут логотип, название и главное меню. -->
+		<img src="image/rhyme.jpg" height="60" alt="Иней">		
+		<h1 id="introduction">Фотогалерея</h1> <!-- Заголовок первого уровня -->
+	</header>
+
+	<main>	<!-- Сюда помещаем основную информацию о содержании сайта (очень полезна для поисковых систем). Содержимое должно быть уникальным и не включать типовые блоки вроде шапки сайта, подвала, навигации, боковой панели, формы поиска и т. п.  -->
+		<p>Фотографии из поездок</p> 	<!-- <p> параграф текста --> 
+	</main>
+	
+<!-- Сайдбар, обычно тут размещают логотип или главную навигационную панель  -->
+	<div class="sidebar">
+		<div class="logo">
+			<img src="logo_SC.png" height="100%" alt="Логотип">
+		</div>
+<!-- Навигация по сайту -->
+		<nav>
+			<h3>Навигация</h3>
+			<a href="./index.html">Домой</a>
+			<a href="./note.html">Ноты</a>
+			<a href="./prog.html">Программы</a>
+    </nav>
+	</div>		
+
+	<article>
+
+		<p id="beauty">Немного красоты...</p>	
+		<!-- Изображение с заголовком -->
+		<figure>
+			<img src="image/Dombay2.jpg" width="100%" alt="Вид">
+			<figcaption>Горы</figcaption>
+			<img src="image/glacier.jpg" width="100%" alt="Ледник">
+			<figcaption>Ледник</figcaption>		
+			<img src="image/symphyotrichum.jpg" width="100%" alt="Цветок">
+			<figcaption>Астра новобельгийская</figcaption>
+			<img src="image/sunset.jpg" width="100%" alt="Закат">
+			<figcaption>Закат</figcaption>
+			<img src="image/leaf.jpg" width="100%" alt="Осень">
+			<figcaption>Осень</figcaption>
+			<img src="image/aipetry.jpg" width="100%" alt="Горная вершина">
+			<figcaption>Ай-Петри</figcaption>
+			<img src="image/clear_water.jpg" width="100%" alt="Горное озеро">
+			<figcaption>Чистая вода</figcaption>
+			<img src="image/falls_sofy.jpg" width="100%" alt="Водопад">
+			<figcaption>Софийский водопад</figcaption>			
+			
+		</figure>
+
+	</article>
+
+	
+	<footer>	<!-- (Подвал) — самый низ сайта. Контакты, ссылки на соцсети, копирайт. -->
+
+	<hr>		
+		<p>© 2026 Моя компания</p>
+		<img src="hedgehog.png" width="40px" alt="Ёжик">
+	</footer>
+	<br>
+	<a href="#introduction">Перейти в начало</a>
+</body>
+</html>

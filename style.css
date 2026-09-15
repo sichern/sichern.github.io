@@ -77,10 +77,10 @@ aside {
 }*/
 
 .card {
-  background: white;
+  background: #ffd6bf;
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
   margin-top: 5px;
 	margin-right: 142px;
 }
