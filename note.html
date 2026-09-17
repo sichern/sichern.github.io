@@ -20,20 +20,24 @@
 </head>
 
 <body>	<!-- Содержимое страницы видимое для посетителей сайта  -->
-<!-- Семантические теги: <header>, <main>, <footer> -->
-	<header>	<!-- (Шапка) — верхняя часть сайта. Обычно тут логотип, название и главное меню. -->
-		<img src="rhyme.jpg" height="60" alt="Иней">		
-		<h1 id="introduction">Ноты</h1> <!-- Заголовок первого уровня -->
+	<header>	<!-- Шапка — верхняя часть сайта. Обычно тут размещают логотип, название и главное меню. -->
+		<div class="img_title">
+			<img src="note/sax.png" alt="Саксофон">		
+		</div>
+
+		<h1 id="introduction">Alto-sax</h1> <!-- Заголовок первого уровня -->
 	</header>
 
-	<main>	<!-- Сюда помещаем основную информацию о содержании сайта (очень полезна для поисковых систем). Содержимое должно быть уникальным и не включать типовые блоки вроде шапки сайта, подвала, навигации, боковой панели, формы поиска и т. п.  -->
-		<p>Alto-sax</p> 	<!-- <p> параграф текста --> 
+	<main>	<!-- Зесь основная информация о содержании сайта (для поисковых систем). Содержимое должно быть уникальным и не включать типовые блоки вроде шапки сайта, подвала, навигации, боковой панели, формы поиска и т. п.  -->
+		<p>Ноты для саксофона альт.</p>
 	</main>
-	
+
 <!-- Сайдбар, обычно тут размещают логотип или главную навигационную панель  -->
 	<div class="sidebar">
 		<div class="logo">
-			<img src="logo_SC.png" height="100%" alt="Логотип">
+			<div class="img_logo40x40">
+				<img src="logo_SC.png" alt="Логотип">
+			</div>
 		</div>
 <!-- Навигация по сайту -->
 		<nav>
@@ -44,27 +48,48 @@
     </nav>
 	</div>		
 
-		<p id="beauty">Немного транспонировал ноты, чтобы легче было играть на Альт саксофоне</p>	
-		<!-- Изображение с заголовком -->
+		<p>Ноты транспонированы для легкой игры на саксофоне. Могут не соответствовать оригиналу по тональности, зато удобно играть новичкам.</p>
+		<p>
+			<img src="note/A Toi_J.Dassin.png" alt="A Toi">
+			<img src="note/Et_Si_Tu_N'existais_Pas.png" alt="Existais Pas">
+			<img src="note/Salyt.png" alt="Salyt">			
+			<img src="note/Woman_in_love.png" alt="Woman">
+			<img src="note/Беловежская пуща.png" alt="Пуща">
+			<img src="note/В землянке.png" alt="Землянка">			
+			<img src="note/Вальс бостон.png" alt="Вальс">			
+			<img src="note/Костер.png" alt="Костер">
+			<img src="note/Куда уходит детство.png" alt="Детство">
+			<img src="note/Мелодия.png" alt="Мелодия">						
+			<img src="note/Ноктюрн.png" alt="Ноктюрн">			
+			<img src="note/Нiч_яка_мiсячна.png" alt="Нiч">
+			<img src="note/Прощальная_(обыкновенное_чудо).png" alt="Прощальная">
+			<img src="note/Я несла свою беду.png" width="500px" alt="Беда">
+		</p>
+		<!-- Изображение с заголовком 
 		<figure>
-			<img src="note/A Toi_J.Dassin.png" width="100%" alt="A Toi">
+			<img src="note/A Toi_J.Dassin.png" width="500rem" alt="A Toi">
 	<br>
-			<img src="note/Woman_in_love.png" width="100%" alt="Woman">
+			<img src="note/Woman_in_love.png" width="500px" alt="Woman">
 	<br>	
-			<img src="note/Нiч_яка_мiсячна.png" width="100%" alt="Нiч">
+			<img src="note/Нiч_яка_мiсячна.png" width="500px" alt="Нiч">
 	<br>
-			<img src="note/Прощальная_(обыкновенное_чудо).png" width="100%" alt="Прощальная">
+			<img src="note/Прощальная_(обыкновенное_чудо).png" width="500px" alt="Прощальная">
 	<br>
-			<img src="note/Я несла свою беду.png" width="100%" alt="Беда">
-	<br>		
+			<img src="note/Я несла свою беду.png" width="500px" alt="Беда">
+	<br>
 		</figure>
-
+		-->
+		
+	<!-- Скачивание файла
+		<a href="note/Ноктюрн.png"><img src="note/Ноктюрн.png" width="200px" alt="Ноктюрн">Ноктюрн</a>	
+ -->
 	
 	<footer>	<!-- (Подвал) — самый низ сайта. Контакты, ссылки на соцсети, копирайт. -->
-
-	<hr>		
+		<hr>
 		<p>© 2026 Моя компания</p>
-		<img src="hedgehog.png" width="40px" alt="Ёжик">
+		<div class="img_logo40x40">
+			<img src="hedgehog.png"alt="Ёжик">		
+		</div>
 	</footer>
 	<br>
 	

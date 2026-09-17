@@ -1,5 +1,5 @@
 html{
-	border: 5px;
+	border: 10px;
 }
 
 p{
@@ -15,7 +15,7 @@ body {
   padding-left: 220px;
 	padding-right: 1rem;
   background: #f7f8fa;
-  color: #333; 
+  color: #333;
 }
 header{
 	/*border-radius: 12px;*/
@@ -53,6 +53,8 @@ h3{
 article {
 	background: #fffffc;
 	margin-right: 1rem;
+	padding-left: 10px;
+	padding-right: 5px;	
 	padding-top: 5px;
   padding-bottom: 1rem;	
 }
@@ -71,10 +73,26 @@ aside {
   margin-bottom: 10px;
 }
 
-/*img{
-	max-width: 100%;
-	height: 100%;
-}*/
+img{
+	width: 100%;	
+	max-width: 600px;
+}
+.img_logo40x40{
+	width: 40px;
+	height:40px;
+}
+.img_title{
+	width: 60px;
+	height:60px;
+}
+.img_dot{
+	height:10px;
+	width: 37px;	
+}
+.foto100x100{
+	width: 100px;
+	height:100px;
+}
 
 .card {
   background: #ffd6bf;
@@ -82,7 +100,7 @@ aside {
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
   margin-top: 5px;
-	margin-right: 142px;
+	margin-right: 140px;
 }
 
 dd {
@@ -98,12 +116,13 @@ dt {
 	- убрать панель навигации
 	- уменьшить padding-left
  */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 	.sidebar {
 		display: none;
 	}
 	img {
-		display: none;
+		/*display: none;*/
+		max-width: 300px;
 	}
 	aside	{
 		display: none;
@@ -152,7 +171,7 @@ nav a:hover {
 }
 
 .logo{
-	height: 32px;	/* высота */
+	height: 40px;	/* высота */
 	width: auto;		/*ширина*/
 	background: #fffaf0;
 	margin: 6px;
@@ -204,7 +223,7 @@ td {
 .markupTD{
 	width: 100%; /* Ширина всей таблицы */
 	background: white;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -219,3 +238,4 @@ td.rightmark{
 .spacemark{
 	width: 5px; /* Расстояние между колонками */
 }
+/* Настройки таблицы на 3 колонки*/

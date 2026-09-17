@@ -22,7 +22,9 @@
 <body>	<!-- Содержимое страницы видимое для посетителей сайта  -->
 <!-- Семантические теги: <header>, <main>, <footer> -->
 	<header>	<!-- (Шапка) — верхняя часть сайта. Обычно тут логотип, название и главное меню. -->
-		<img src="logo8_ru.png" height="28" alt="лого">		
+		<div class="img_dot">
+			<img src="logo8_ru.png" alt="лого">	
+		</div>
 		<h1 id="introduction">Шпаргалка для программирования микроконтроллеров</h1> <!-- Заголовок первого уровня -->
 	</header>
 
@@ -33,7 +35,9 @@
 <!-- Сайдбар, обычно тут размещают логотип или главную навигационную панель  -->
 	<div class="sidebar">
 		<div class="logo">
-			<img src="logo_SC.png" height="100%" alt="Логотип">
+			<div class="img_logo40x40">
+				<img src="logo_SC.png" alt="Логотип">
+			</div>
 		</div>
 <!-- Навигация по сайту -->
 		<nav>
@@ -45,17 +49,31 @@
 	</div>		
 
 	<article>
-
 		<p>Будущая статья о программирвании микроконтроллеров AVR и STM...</p>	
-
+		<h3><a name="contents"></a>Содержание:</h3> 	<!-- Заголовок третьего уровня -->
+				<ol>	<!-- Нумерованный список -->
+					<li> <a href="#avr">Микроконтроллеры AVR</a></li>			
+					<li> <a href="#stm">Микроконтроллеры STM32</a></li>
+					<li> <a href="#reference">Литература</a></li>								
+				</ol>
+		<h3><a name="avr"></a>1. Микроконтроллеры AVR</h3>
+			<p>Примеры кодов для работы с периферией микроконтроллеров AVR</p>
+			<p>Исходники можно посмотреть <a href="https://github.com/sichern/AVR-fragments">здесь<a></p>
+			<br>
+		<h3><a name="stm"></a>2. Микроконтроллеры STM32</h3>
+			<h4>STM32 + CMSIS</h4>
+			<p>Примеры кодов для работы с периферией микроконтроллеров STM32</p>
+			<p>Исходники можно посмотреть <a href="https://github.com/sichern/STM32-fragments">здесь<a></p>
+			<br>			
 	</article>
 
 	
 	<footer>	<!-- (Подвал) — самый низ сайта. Контакты, ссылки на соцсети, копирайт. -->
-
-	<hr>		
+		<hr>
 		<p>© 2026 Моя компания</p>
-		<img src="hedgehog.png" width="40px" alt="Ёжик">
+		<div class="img_logo40x40">
+			<img src="hedgehog.png"alt="Ёжик">		
+		</div>
 	</footer>
 	<br>
 	
