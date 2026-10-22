@@ -3,15 +3,22 @@ html{
 }
 
 p{
-	margin-block-start: 0.5em;
+	margin-block-start: 0.5em;	/*В браузерах по умолчанию 1rem = 16px*/
 	margin-block-end: 0.5em;	
+}
+
+p.hd{
+	font-size: 1.2em;			/* 1em равен размеру шрифта родительского элемента. Если у самого элемента размер шрифта не задан явно, то за основу берётся размер шрифта его ближайшего родителя*/
+	font-weight: bold;
+	padding-left: 1.0rem;	/* 1rem равен размеру шрифта корневого элемента (html). В браузерах по умолчанию 1rem = 16px*/
+	color: #8f3808;
 }
 
 body {
   font-family: Tahoma, Geneva, sans-serif;
-	max-width: 1700px;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	max-width: 1400px;
+	margin-left: 2rem;
+	margin-right: 2rem;
   padding-left: 220px;
 	padding-right: 1rem;
   background: #f7f8fa;
@@ -27,7 +34,7 @@ header{
 }
 footer{
 	background-image: url('logo3.png');
-	background-repeat: repeat;	
+	background-repeat: repeat;
 }
 
 h1{ 
@@ -52,7 +59,7 @@ h3{
 
 article {
 	background: #fffffc;
-	margin-right: 1rem;
+	margin-right: 0rem;
 	padding-left: 10px;
 	padding-right: 5px;	
 	padding-top: 5px;
@@ -137,11 +144,12 @@ dt {
 
 /* Боковая панель */
 .sidebar {
-	height: 100%;			/* Полная высота: удалите это, если вы хотите "авто" высота */
-	width: 200px;			/* Установите ширину боковой панели */
+	margin-left: 2rem;
+/*	height: 100%;			/* 100% - полная высота (на всю высоту страницы), по умолчанию - "авто" высота (по содержимому) */
+	width: 200px;			/* ширина боковой панели */
 	position: fixed;	/* Фиксированная боковая панель (остается на месте при прокрутке) */
 	z-index: 1;				/* Остается поверх всего */
-	top: 0;						/* Остается сверху */
+	top: 10px;				/* Положение от верха страницы */
 	left: 0;
 	background: #f0f0f0;	/* серый*/
 	overflow-x: hidden;		/* Отключить горизонтальную прокрутку */
@@ -224,8 +232,9 @@ td {
 	width: 100%; /* Ширина всей таблицы */
 	background: white;
   padding: 0.5rem;
+	border: 2px solid #f7f8fa;
   border-radius: 8px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 td.leftmark{
 	width: 180px; /* Ширина колонки */
